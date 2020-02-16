@@ -24,8 +24,10 @@ Route::get('/phpinfo',function(){
 ########################  测试路由 ############################
 Route::prefix('/test')->group(function(){
     Route::get('/redis','TestController@testRedis');
-    Route::get('/test002','TestController@test002');
-    Route::get('/test003','TestController@test003');
+    Route::get('/wx','TestController@token');
+    Route::get('/curl','TestController@curl1');
+    Route::get('/curl2','TestController@curl2');
+    Route::get('/guzzle','TestController@guzzle1');
 
 });
 
